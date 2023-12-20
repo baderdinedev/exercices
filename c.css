@@ -1,0 +1,359 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 57, 57);
+    background-color: #f3f3f3;
+    height: 100vh;
+    padding: 2rem;
+  }
+  
+  nav {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 50px;
+  }
+  input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  /* Styling for draggable elements */
+.draggable {
+    width: 20%;
+    cursor: grab;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  .draggable:active {
+    cursor: grabbing;
+  }
+  
+  /* Styling for the dragged-over input */
+  .drag-over {
+    border: 2px dashed #007bff;
+  }
+  
+  /* Optional: Style for the container of draggable elements */
+  #draggable-container {
+    display: flex;
+  }
+  
+  /* Optional: Adjust styling based on your layout */
+  #drag1 {
+    margin-right: 10px;
+  }
+  
+  input {
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 20px;
+    font-family: inherit;
+    text-align: center;
+    width: 22rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    color: inherit;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    outline: none;
+    background: transparent;
+  }
+  .star {
+    font-size: 2rem;
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-between;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+  
+  .ex1 {
+    display: inline-block;
+  }
+  .donne {
+    font-size: 2.5rem;
+    display: inline-block;
+    padding: 0 2rem;
+    margin-bottom: 0.2rem;
+  
+    font-family: inherit;
+    text-align: left;
+  
+    margin-right: 1rem;
+    color: inherit;
+  
+    transition: all 0.3s;
+  }
+  .welcome {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-left: 20px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    height: 5.25rem;
+  }
+  
+  .sound {
+    height: 40px;
+  }
+  
+  .icon-details {
+    cursor: pointer;
+    font-size: 4rem;
+  }
+  .hidden {
+    display: none;
+  }
+  .close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  .modal2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 15px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .hiddenn {
+    display: none;
+  }
+  .reset {
+    position: absolute;
+    top: 5vh;
+    left: 190vh;
+    cursor: pointer;
+  }
+  .fel {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: -10rem;
+    width: 120%;
+    height: 110%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+  .container {
+    width: 1300px;
+    height: 500px;
+    margin: 1% auto;
+    margin-bottom: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+  }
+  .hh1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .error {
+    width: 800px;
+    color: #cc0033;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    text-shadow: 1px 1px rgba(250, 250, 250, 0.3);
+  
+    text-align: center;
+  }
+  
+  .correct {
+    color: green;
+  
+    width: 90%;
+  
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    text-shadow: 1px 1px rgba(250, 250, 250, 0.3);
+  
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+  }
+  .container form {
+    width: 1000px;
+    margin-bottom: 0px;
+    transition: 1s;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  thead,
+  tfoot {
+    border: 2px solid black;
+    background-color: #333;
+    color: #fff;
+  }
+  th,
+  td,
+  tr {
+    /* border-radius: 20px; */
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+  }
+  
+  table {
+    position: relative;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    /* right: -90px; */
+  }
+  th {
+    background-color: #77eed8;
+    /* color: white; */
+    border: 2px solid black;
+  }
+  .test1 {
+    display: flex;
+  }
+  /* .tabM table,
+  th,
+  td,
+  tr,
+  thead {
+    padding: 0;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+  } */
+  table {
+    margin-right: 20rem;
+    width: 1000px;
+    transition: 1s;
+  }
+  .btn-box {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+  }
+  form button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #77eed8, #9eabe4);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .small {
+    width: 500px;
+  
+    font-size: 2rem;
+  }
+  #Fomr2 {
+    /* margin-right: 6rem; */
+    left: 1600px;
+  }
+  #Fomr3 {
+    margin-top: 100px;
+    left: 1600px;
+  }
+  #Fomr4 {
+    margin-top: 80px;
+    left: 1600px;
+  }
+  #Fomr5 {
+    margin-top: 100px;
+    left: 1600px;
+  }
+  #Fomr6 {
+    margin-top: 80px;
+    left: 1600px;
+  }
+  #Fomr7 {
+    margin-top: 80px;
+    left: 1600px;
+  }
+  .step-row {
+    /* border-radius: 20px; */
+    width: 1300px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .step-col {
+    width: 185.7px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  #progress {
+    position: absolute;
+    height: 100%;
+    width: 185.7px;
+    background: linear-gradient(to right, #77eed8, #9eabe4);
+    transition: 1s;
+  }
+  #progress::after {
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #9eabe4;
+  }

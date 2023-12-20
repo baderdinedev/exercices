@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* color: #3449695a; */
+}
+    body{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center; 
+    }
+    .welcome {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        padding-left: 20px;
+        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    }
+    .donne {
+        font-size: 2.5rem;
+        display: inline-block;
+        padding: 0 2rem;
+        margin-bottom: 0.2rem;
+        font-family: inherit;
+        text-align: left;
+        margin-right: 1rem;
+        color: inherit;
+        transition: all 0.3s;
+    }
+    .ex1 {
+        display: inline-block;
+    }
+    .container {
+        width: 1300px;
+        height: 500px;
+        margin: 1% auto;
+        margin-bottom: 400px;
+        background: rgb(255, 255, 255);
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        padding: 0px;
+    }
+    .container form {
+        width: 1000px;
+        margin-bottom: 0px;
+        transition: 1s;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .star {
+        font-size: 2rem;
+        display: flex;
+        margin-top: 0px;
+        justify-content: space-between;
+    }
+    table {
+        margin-right: 20rem;
+        width: 1000px;
+        transition: 1s;
+    }
+    .pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .pagination a{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        background:#f1c40f;
+        text-align: center;
+        Line-height: 50px;
+        font-weight: 600;
+        position: relative;
+        padding-right: 20px;
+        transition: 0.25s ease;
+        }
+        .prev {
+        border-radius: 25px 0 0 25px;
+        }
+        .next{
+        border-radius: 0 25px 25px;
+        }
+        .pagination a::before, .pagination a::after{
+            content: "";
+            position: absolute;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            }
+            .num::before, .next::before{
+            border-right: 20px solid #f1c40f;
+            right: 100%;
+            }
+            .num::after,.prev::after{
+            border-right: 20px solid #e74c3c;
+            right: 0;
+            }
+
+            .pagination a:hover{
+                color:#fff;
+            }

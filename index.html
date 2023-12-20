@@ -1,0 +1,250 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="shortcut icon" type="image/png" href="/img/rerer.png">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="c.css">
+      <title>education</title>
+   </head>
+   <body cz-shortcut-listen="true">
+      <!-- TOP NAVIGATION -->
+      <nav>
+         <img src="/img/test.png" alt="Logo" class="logo">
+         <div class="welcome">Exercice 1: Exemple 1</div>
+         <!-- <img class="sound"src="play.png" > -->
+         <span class="material-icons icon-details ">volume_up</span>
+         <!-- <span class="material-icons icon-details hidden pause">volume_off</span> -->
+      </nav>
+      <div class="donne">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mon père a acheté un terrain pour 
+         <div class="ex1 Prx">49425</div>
+         € et l'a vendu au bout d'un
+         moment, réalisant un bénéfice de 
+         <div class="ex1 Prc">4</div>
+         %, en cherchant le prix de vente du
+         terrain ?
+      </div>
+      <div class="container">
+         <form id="Fomr1" class="Form1" style="left: -1400px;">
+            <h2 class="star">
+               1- Complétez le tableau suivant :&nbsp;&nbsp;
+               <!-- <div><img class="help btn0" src="/img/Help-icon.png" alt="help" width="40" height="40"></div> -->
+            </h2>
+            <div id="drag1" class="draggable" draggable="true">4</div>
+            <div id="drag2" class="draggable" draggable="true">49425</div>
+            <table class="tab1 table">
+               <table>
+                  <thead>
+                     <tr>
+                        <th>Verbale donné</th>
+                        <th>Connotation numérique</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Le prix d'achat du terrain</td>
+                        <td><input type="text" class="prix1" placeholder="Enter text" onblur="getVal()" required=""></td>
+                     </tr>
+                     <tr>
+                        <td>Pourcentage de profit</td>
+                        <td><input type="text" class="perc" placeholder="Enter text" onblur="getVal()" required=""></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </table>
+            <div class="btn-box">
+               <button type="button" id="next1">Suivant</button>
+            </div>
+         </form>
+         <form id="Fomr2" class="Form2" style="left: 160px;">
+            <h2 class="star">
+               2- Complétez la reconstruction du tableau suivant en plaçant les deux signifiants dans les cases appropriées,
+               en vous basant sur le tableau de données précédent:&nbsp;&nbsp;
+               <!-- <div><img class="help trois" src="/img/Help-icon.png" alt="help" width="40" height="40"></div> -->
+            </h2>
+            <div style="display: flex;">
+                <div id="drag1" class="draggable" draggable="true">104</div>
+                <div id="drag2" class="draggable" draggable="true">51402</div>
+                <div id="drag1" class="draggable" draggable="true">1977</div>
+            </div>
+            <table>
+               <thead>
+                  <tr>
+                     <th>L'origine</th>
+                     <th>L'augmentation</th>
+                     <th>L'origine - L'augmentation</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Le prix d'achat du terrain</td>
+                     <td>Profit</td>
+                     <td>Le prix de vente du terrain</td>
+                  </tr>
+                  <tr>
+                     <td>100 %</td>
+                     <td>4 %</td>
+                     <td> ( Ob 1 )  <input type="text" class="ob1" placeholder="Enter text" onblur="getVal()"></td>
+                  </tr>
+                  <tr>
+                     <td>49425 €</td>
+                     <td> ( Ob 2) <input type="text" class="ob2" placeholder="Enter text" onblur="getVal()"></td>
+                     <td> ( Ob 3) <input type="text" class="ob3" placeholder="Enter text" onblur="getVal()"></td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="btn-box">
+               <button type="button" id="back2">Précédent</button>
+               <button type="button" id="next2">Suivant</button>
+            </div>
+         </form>
+         <form id="Fomr3" class="Form3">
+            <h2 class="star">
+               3- Après une lecture horizontale de la première section ( Ob 1) , je cherche ce qu'il faut
+               <div><img class="help trois2" src="/img/Help-icon.png" alt="help" width="40" height="40"></div>
+            </h2>
+            <table>
+               <tbody>
+                  <tr>
+                     <td>100 %</td>
+                     <td>    4 %        </td>
+                     <td><input type="text" class="ob11" placeholder="(Ob1)" onblur="getVal()"></td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="btn-box">
+               <button type="button" id="back3">Précédent</button>
+               <button type="button " id="next3" class="next3">Suivant</button>
+            </div>
+         </form>
+         <form id="Fomr4" class="Form4">
+            <h2 class="star">
+               4- Après une lecture verticale des deux colonnes (1) et (2) , je cherche le desiré (2)
+               <div><img class="help trois3" src="/img/Help-icon.png" alt="help" width="40" height="40"></div>
+            </h2>
+            <table>
+               <tbody>
+                  <tr>
+                     <td>100 %</td>
+                     <td>    4 %        </td>
+                     <td>-----------</td>
+                  </tr>
+                  <tr>
+                     <td>49425 €</td>
+                     <td><input type="text" class="ob21" placeholder="(Ob2)" onblur="getVal()"></td>
+                     <td>-----------</td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="btn-box">
+               <button type="button" id="back4">Précédent</button>
+               <button type="button" id="next4">Suivant</button>
+            </div>
+         </form>
+         <form id="Fomr5" class="Form5">
+            <h2 class="star">
+               5- Après une lecture horizontale de le deuxième section ( Ob 3) , je cherche ce qu'il faut
+               <div><img class="help b6" src="/img/Help-icon.png" alt="help" width="40" height="40"></div>
+            </h2>
+            <table>
+               <tbody>
+                  <tr>
+                     <td> 49425 €</td>
+                     <td>    1977       </td>
+                     <td><input type="text" class="ob31" placeholder="(Ob3)" onblur="getVal()"></td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="btn-box">
+               <button type="button" id="back5">Précédent</button>
+               <button type="button" id="next5">Suivant</button>
+            </div>
+         </form>
+         <form id="Fomr6" class="Form6">
+            <h2 class="star">
+               6- Après une lecture verticale des deux colonnes (2) et (3) , je cherche ob(3)
+               <div><img class="help b8" src="/img/Help-icon.png" alt="help" width="40" height="40"></div>
+            </h2>
+            <table>
+               <tbody>
+                  <tr>
+                     <td>-----------</td>
+                     <td>4 %</td>
+                     <td>    104 %        </td>
+                  </tr>
+                  <tr>
+                     <td>-----------</td>
+                     <td>1977 €</td>
+                     <td><input type="text" class="ob32" placeholder="(Ob3)" onblur="getVal()"></td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="btn-box">
+               <button type="button" id="back6">Précédent</button>
+               <button type="button" id="next6">Suivant</button>
+            </div>
+         </form>
+         <form id="Fomr7" class="Form7">
+            <h2 class="star">
+               7- Après une lecture verticale des deux colonnes (1) et (3) , je cherche ob(3) sans chercher ob(2)
+               <div><img class="help b10" src="/img/Help-icon.png" alt="help" width="40" height="40"></div>
+            </h2>
+            <table>
+               <tbody>
+                  <tr>
+                     <td>100 %</td>
+                     <td>-----------</td>
+                     <td>    104 %        </td>
+                  </tr>
+                  <tr>
+                     <td>49425 €</td>
+                     <td>-----------</td>
+                     <td><input type="text" class="ob33" placeholder="(Ob3)" onblur="getVal()"></td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="btn-box">
+               <button type="button" id="back7">Précédent</button>
+               <button type="button" id="next7">Verification</button>
+            </div>
+         </form>
+         <div class="step-row">
+            <div id="progress" style="width: 371.4px;"></div>
+            <div class="step-col"><small>Q1</small></div>
+            <div class="step-col"><small>Q2</small></div>
+            <div class="step-col"><small>Q3</small></div>
+            <div class="step-col"><small>Q4</small></div>
+            <div class="step-col"><small>Q5</small></div>
+            <div class="step-col"><small>Q6</small></div>
+            <div class="step-col"><small>Q7</small></div>
+         </div>
+      </div>
+      <div class="modal2 hidden ">
+         <button class="close-modal hidden">×</button>
+         <h1 class="hh1">I'm a modal window 😍</h1>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+         </p>
+      </div>
+      <div class="overlay hidden "></div>
+      <div class="hiddenn fell">
+         <img src="/img/felicitations.png" class=" fel">
+         <img src="/img/restart.png" class="icon-details reset">
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+      <script src="dragDrop.js"></script>
+      <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
+         <section id="shadow-host-companion"></section>
+      </div>
+   </body>
+</html>
